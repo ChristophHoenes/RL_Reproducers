@@ -1,0 +1,8 @@
+The big difference in not using true versus semi gradient seems to be due to complexity/time constraints. Semi gradient is a simplification which seems to work well with some adjustments.  
+Semi gradient methods are not convergent in general but fast.
+Full gradient methods have much higher variance.
+Even in control were you to use full gradient , the gradient is not a direct gradient for the optimal q* (as it still only a smaple)
+There has been a lot of work done to use true gradient (and residual gradient albeit i didn't look at that)
+Attached are some documents including Baird(original TD work),Watkins semi gradient q learning introduction, Maei,(True gradient work),DQN paper and a word document with bits and pieces.
+SARSA has better convergence properties than Q learning
+
